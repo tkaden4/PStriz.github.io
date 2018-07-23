@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 
 const App = () => <span>This site is <i>in progress</i></span>;
 
-let el = document.getElementById("react-app");
+const el = document.getElementById("react-app");
 if (!el) {
     // TODO make more user-friendly
     throw new Error();

@@ -6,8 +6,15 @@
   "scripts": {
     "start-dev": "parcel index.pug -d build",
     "build": "parcel build index.pug -d build",
-    "predeploy": "npm build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "./bin/gh-pages-deploy",
+    "clean-source": "rimraf README.md .babelrc .flowconfig .gitignore package*.json index.pug src"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "./build/",
+    "post": [
+      "clean-source"
+    ]
   },
   "repository": {
     "type": "git",
@@ -25,9 +32,11 @@
     "babel-preset-flow": "6.23.0",
     "babel-preset-react": "6.24.1",
     "flow": "0.2.3",
+    "gh-pages-deploy": "0.5.0",
     "node-sass": "4.9.2",
     "parcel-bundler": "1.9.7",
-    "pug": "2.0.3"
+    "pug": "2.0.3",
+    "rimraf": "2.6.2"
   },
   "dependencies": {
     "gh-pages": "1.2.0",
