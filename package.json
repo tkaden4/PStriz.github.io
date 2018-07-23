@@ -1,0 +1,40 @@
+{
+  "name": "PStriz.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "parcel index.pug -d build",
+    "build": "parcel build index.pug -d build",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkaden4/PStriz.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkaden4/PStriz.github.io/issues"
+  },
+  "homepage": "https://github.com/tkaden4/PStriz.github.io#readme",
+  "devDependencies": {
+    "babel-preset-env": "1.7.0",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react": "6.24.1",
+    "flow": "0.2.3",
+    "node-sass": "4.9.2",
+    "parcel-bundler": "1.9.7",
+    "pug": "2.0.3"
+  },
+  "dependencies": {
+    "gh-pages": "1.2.0",
+    "normalize.css": "8.0.0",
+    "prop-types": "15.6.2",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "skeleton.css": "2.0.4"
+  }
+}
