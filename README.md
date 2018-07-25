@@ -2,7 +2,7 @@
 
 The website for pstriz.
 
-## Deploying
+## Deploying (currently fails)
 ```bash
 npm install && npm deploy
 ```

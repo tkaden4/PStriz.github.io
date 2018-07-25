@@ -1,7 +1,7 @@
-// @flow
-
 import React from "react";
 import ReactDOM from "react-dom";
+
+import styles from "./app.sass";
 
 const App = () => <span>This site is <i>in progress</i></span>;
 
