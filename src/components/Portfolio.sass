@@ -1,0 +1,21 @@
+@import common
+
+.portfolio
+    box-sizing: border-box
+    color: $light-color
+
+    max-height: 100vh
+
+    @media (min-width: $wrap-size)
+        overflow-y: scroll
+
+    display: flex
+    flex-wrap: wrap
+
+    > *
+        @include common-shadow
+    > img
+        margin: 2.5px
+        box-sizing: border-box
+        width: 500px
+        max-width: 100%

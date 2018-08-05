@@ -1,0 +1,104 @@
+@import common
+
+.social-info
+    > *
+        margin: 0 2px
+
+.contact-info
+    > *
+        display: inline-block
+
+.tech
+    color: $tech-color
+
+.art
+    color: $art-color
+
+.profile
+    max-width: 380px
+    flex-shrink: 0
+    margin: $common-pad
+
+    align-self: flex-start
+
+    @media(max-width: 700px)
+        align-self: center
+
+    color: $light-color
+    background-color: $dark-color
+
+    @include common-shadow
+
+    box-sizing: border-box
+
+    padding: $common-pad
+
+    .header
+        line-height: 100%
+        font-size: 30px
+        .sub
+            line-height: 110%
+            margin: $common-pad/2 0
+            > *
+                display: inline-block
+            font-size: 0.6em
+            .reset
+                opacity: 0.8
+
+    .description
+        display: inline-block
+        margin-top: 10px
+        font-size: 12px
+        color: lightgrey
+        > strong
+            color: white
+
+.email
+    opacity: 0.9
+    > a
+        color: $light-color
+        text-decoration: none
+        transition: opacity 0.05s
+        &:hover
+            opacity: 0.8
+
+.social-badge
+    color: $light-color
+    // TODO change depending on category
+    &:hover
+        color: $accent-color
+
+.skills
+    margin-top: $common-pad - 5px
+    display: flex
+    justify-content: flex-start
+    flex-flow: row wrap
+    .skill-category
+        &:not(:last-child)
+            margin-right: $common-pad
+        .skill
+            display: flex
+            align-items: center
+            .skill-name
+                $size: 65px
+                width: $size
+            .skill-mark
+                $mark-size: 8px
+                $mark-spacing: 1px
+
+                background-color: transparentize($light-color, 0.85)
+
+                &.active
+                    &.tech
+                        background-color: $accent-color
+                    &.art
+                        background-color: $accent-color-2
+
+                display: inline-block
+
+                box-sizing: border-box
+
+                height: $mark-size
+                width: $mark-size
+
+                margin: $mark-spacing

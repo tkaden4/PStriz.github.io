@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "parcel index.pug -d build",
-    "build": "parcel build index.pug -d build",
-    "predeploy": "npm run build",
-    "deploy": "./bin/gh-pages-deploy",
-    "clean-source": "rimraf README.md .babelrc .flowconfig .gitignore package*.json index.pug src"
+    "build": "parcel build index.pug -d build"
   },
   "gh-pages-deploy": {
     "staticpath": "./build/",
@@ -21,8 +18,8 @@
     "url": "git+https://github.com/tkaden4/PStriz.github.io.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kaden Thomas",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tkaden4/PStriz.github.io/issues"
   },
@@ -31,19 +28,21 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-flow": "6.23.0",
     "babel-preset-react": "6.24.1",
-    "flow": "0.2.3",
-    "gh-pages-deploy": "0.5.0",
     "node-sass": "4.9.2",
     "parcel-bundler": "1.9.7",
-    "pug": "2.0.3",
-    "rimraf": "2.6.2"
+    "pug": "2.0.3"
   },
   "dependencies": {
-    "gh-pages": "1.2.0",
+    "classnames": "2.2.6",
+    "font-awesome": "4.7.0",
     "normalize.css": "8.0.0",
     "prop-types": "15.6.2",
     "react": "16.4.1",
     "react-dom": "16.4.1",
-    "skeleton.css": "2.0.4"
+    "react-router": "4.3.1",
+    "react-router-dom": "4.3.1",
+    "simplebar": "3.0.0-beta.1",
+    "skeleton.css": "2.0.4",
+    "underscore": "1.9.1"
   }
 }

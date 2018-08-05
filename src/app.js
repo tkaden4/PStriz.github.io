@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import styles from "./app.sass";
+import App from "./components/App";
 
-const App = () => <span>This site is <i>in progress</i></span>;
+import "./app.sass";
 
 const el = document.getElementById("react-app");
 if (!el) {
-    // TODO make more user-friendly
-    throw new Error();
+    throw new Error("react-app not defined");
 }
-ReactDOM.render(<App />, el);
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    el
+);
