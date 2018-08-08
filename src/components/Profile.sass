@@ -14,15 +14,16 @@
 .art
     color: $art-color
 
+.profile-container
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    width: 100%
+
 .profile
     max-width: 380px
-    flex-shrink: 0
-    margin: $common-pad
-
-    align-self: flex-start
-
-    @media(max-width: 700px)
-        align-self: center
+    //max-height: calc(100% - #{$common-pad*2})
 
     color: $light-color
     background-color: $dark-color
@@ -32,6 +33,10 @@
     box-sizing: border-box
 
     padding: $common-pad
+    margin: $common-pad
+
+    @media screen and (max-width: 405px)
+        margin: 0
 
     .header
         line-height: 100%

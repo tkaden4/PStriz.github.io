@@ -10,15 +10,10 @@ import Profile from "./Profile";
 
 export const App = () =>
     <div className="app">
-        <Profile />
-        <div className="auxillary-view">
-            <Switch>
-                <Route exact path="/" component={Portfolio} />
-                <Route exact path="/timeline" component={Timeline} />
-                {/* Catch-all route */}
-                <Redirect to="/" />
-            </Switch>
-        </div>
+        <Switch>
+            <Route exact path="/" component={Profile} />
+            <Redirect to="/" />
+        </Switch>
     </div>;
 
 export default App;

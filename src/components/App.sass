@@ -4,18 +4,17 @@
     background-color: $dark-color
     color: $light-color
 
-*
-    outline: 1px solid white
-
 .app
     font-family: $default-font, $backup-fonts
     font-size: 14px
 
     color: lightgrey
+    position: absolute
 
+    height: 100%
     min-height: 100%
-
-    display: flex
+    width: 100%
+    max-width: 100%
 
     $dot-color: transparentize($light-color, 0.4)
     background-image: radial-gradient(circle, $dot-color, transparent 10%)
@@ -24,12 +23,3 @@
     background-size: 10px 10px
 
     background-color: lighten($dark-color, 3%)
-
-    overflow: hidden
-
-    @media(max-width: $wrap-size)
-        flex-flow: column nowrap
-
-.auxillary-view
-    height: 100%
-    min-height: 100%

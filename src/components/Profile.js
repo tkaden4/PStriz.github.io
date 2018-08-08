@@ -84,33 +84,35 @@ const Skills = ({ skills }) =>
     </div>;
 
 export const Profile = () =>
-    <div className="profile">
-        <div className="header">
-            Peter Strizhev
-            <div className="sub">
-                <span className="tech">
-                    Software Developer
-                </span>
-                &nbsp;
-                <span className="reset">
-                    +
-                </span>
-                &nbsp;
-                <span className="art">
-                    Game Designer
-                </span>
+    <div className="profile-container">
+        <div className="profile">
+            <div className="header">
+                Peter Strizhev
+                <div className="sub">
+                    <span className="tech">
+                        Software Developer
+                    </span>
+                    &nbsp;
+                    <span className="reset">
+                        +
+                    </span>
+                    &nbsp;
+                    <span className="art">
+                        Game Designer
+                    </span>
+                </div>
             </div>
+            <ContactInfo info={info} />
+            <div className="description">
+                Lorem ipsum dolor sit amet, quod senserit dignissim usu ad,&nbsp;
+                <strong>Bellevue College</strong> choro an nam. Putent animal no sed. Ea sit exerci saperet
+                elaboraret, usu ex quis graecis. Ne impedit disputationi mel. Vim
+                ex inani menandri platonem, elit veniam consequuntur ne vis. In
+                inani libris <strong>Skyline High School</strong> cum, quo dicant
+                molestie in.
+            </div>
+            <Skills skills={skills} />
         </div>
-        <ContactInfo info={info} />
-        <div className="description">
-            Lorem ipsum dolor sit amet, quod senserit dignissim usu ad,&nbsp;
-            <strong>Bellevue College</strong> choro an nam. Putent animal no sed. Ea sit exerci saperet
-            elaboraret, usu ex quis graecis. Ne impedit disputationi mel. Vim
-            ex inani menandri platonem, elit veniam consequuntur ne vis. In
-            inani libris <strong>Skyline High School</strong> cum, quo dicant
-            molestie in.
-        </div>
-        <Skills skills={skills} />
     </div>;
 
 export default Profile;
